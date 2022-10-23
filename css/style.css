@@ -1,0 +1,154 @@
+body {
+  background-color: ivory;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.hidden {
+  display: none;
+}
+#quote {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 40%;
+}
+#clock {
+  font-size: 80px;
+  text-shadow: 1px 1px gray;
+}
+.clock-box {
+  border: 3px solid;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 30px 12px gray;
+}
+.greeting-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px;
+  text-shadow: 1px 1px gray;
+  font-size: 30px;
+}
+#login-form {
+  margin-top: 40px;
+}
+#login-form input {
+  border: none;
+  border-bottom: 3px solid;
+  font-size: 60px;
+  background: none;
+  text-align: center;
+  text-shadow: 1px 1px gray;
+  border-radius: 30px;
+  color: transparent;
+}
+/* #login-form input::placeholder {
+  color: white;
+} */
+#login-form input:focus {
+  outline: none;
+  box-shadow: 60px 12px gray;
+  border-radius: 30px;
+}
+
+#todo-form input {
+  border: none;
+  border-bottom: 3px solid;
+  font-size: 30px;
+  background: none;
+  text-align: center;
+  text-shadow: 1px 1px gray;
+  border-radius: 30px;
+  color: transparent;
+  width: 500px;
+}
+#todo-form input:focus {
+  outline: none;
+  box-shadow: 60px 12px gray;
+  border-radius: 30px;
+}
+#todo-list {
+  margin-top: 30px;
+  width: 500px;
+  height: 350px;
+  padding: 20px 40px;
+  border: 3px solid;
+  border-radius: 30px;
+  box-shadow: 30px 12px gray;
+  overflow: scroll;
+}
+#todo-list::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+li {
+  padding: 10px 0px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+li:hover {
+  box-shadow: 0px 1px gray;
+}
+button {
+  background: none;
+  border: none;
+}
+button:focus {
+  text-shadow: 1px 1px gray;
+}
+#quote {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width: 800px;
+  height: 100px;
+  border: 3px solid;
+  border-radius: 30px;
+  box-shadow: 30px 12px gray;
+  padding: 10px 20px;
+}
+#quote span:first-child {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+#quote span:last-child {
+  font-size: 18px;
+  line-height: 2;
+}
+#weather {
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  border: 3px solid;
+  padding: 10px 15px;
+  box-shadow: 1px 1px gray;
+  border-radius: 20px;
+}
